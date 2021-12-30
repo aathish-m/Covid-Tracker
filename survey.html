@@ -1,0 +1,124 @@
+<html>
+<head>
+<title>Survey Form</title>
+<link rel="stylesheet" type="text/css" href="F:\style.css">
+</head>
+<body>
+<header id="title">
+<h1>Covid-19 Survey form<h1>
+</header>
+<section>
+<div class="container">
+<div class="description">
+<p><center>!C-19!</center></p>
+</div>
+<form id="survey-form" action="insert.php" method="POST">
+<div class="row-tab">
+<div class="label-tab">
+<label>First Name</label>
+</div>
+<div class="input-tab">
+<input type="text" name="firstname">
+</div>
+</div>
+<div class="row-tab">
+<div class="label-tab">
+<label>Last Name</label>
+</div>
+<div class="input-tab">
+<input type="text" name="lastname">
+</div>
+</div>
+<div class="row-tab">
+<div class="label-tab">
+<label>Email</label>
+</div>
+<div class="input-tab">
+<input type="email" name="email">
+</div>
+</div>
+<div class="row-tab">
+<div class="label-tab">
+<label>Age</label>
+</div>
+<div class="input-tab">
+<input type="number" name="age">
+</div>
+</div>
+<div class="row-tab">
+<div class="label-tab">
+<label>Which option describes your current role?</label>
+</div>
+<div class="select-tab">
+<select id="select-box" name="currentrole">
+<option>STUDENT</option>
+<option>EMPLOYEE</option>
+<option>BUISNESS</option>
+</select>
+</div>
+</div>
+<div class="row-tab">
+<div class="label-tab">
+<label>Have you travelled abroad in 2020?</label>
+</div>
+<div class="input-tab">
+<div>
+<input type="radio" name="travelled" value="Yes"><label>Yes</label></div>
+<div><input type="radio" name="travelled"><label>No</label></div>
+</div>
+</div>
+<div class="row-tab">
+<div class="label-tab">
+<label>Have you been directly exposed to someone who is suspected of having or diagnosed with COVID-19?</label>
+</div>
+<div class="input-tab">
+<div><input type="radio" name="exposed" value="Yes"><label>Yes</label></div>
+<div><input type="radio" name="exposed"><label>No</label></div>
+<div><input type="radio" name="exposed"><label>Not Sure</label></div>
+</div>
+</div>
+<div class="row-tab">
+<div class="label-tab">
+<label>Did you take Vaccine for C-19?</label>
+</div>
+<div class="select-tab">
+<select name="vaccinated">
+<option>Yes</option>
+<option>No</option>
+<option>Taken the first Vaccine not the second</option>
+</select>
+</div>
+</div>
+<div class="row-tab">
+<div class="label-tab">
+<label>Please select the symptoms you are experiencing!</label>
+</div>
+<div class="input-tab">
+<div><input type="radio" name="symptoms"><label>High Fever</label></div>
+<div><input type="radio" name="symptoms"><label>Difficulty Breathing</label></div>
+<div><input type="radio" name="symptoms"><label>Cough</label></div>
+<div><input type="radio" name="symptoms"><label>Persistent pain or pressure in chest</label></div>
+<div><input type="radio" name="symptoms"><label>Body Aches</label></div>
+<div><input type="radio" name="symptoms"><label>Runny Nose</label></div>
+<div><input type="radio" name="symptoms"><label>Sore Throat</label></div>
+<div><input type="radio" name="symptoms"><label>Diarrhea</label></div>
+<div><input type="radio" name="symptoms"><label>Nasal Congestion</label></div>
+<div><input type="radio" name="symptoms"><label>Other:</label></div>
+</div>
+</div>
+<div class="row-tab">
+<div class="label-tab">
+<label>Anything else you'd like to report?</label>
+</div>
+<div class="input-tab">
+<input type="text" name="report" >
+</div>
+</div>
+<div class="row-tab" type="SUBMIT">
+<button>SUBMIT</button>
+</div>
+</form>
+</div>
+</section>
+</body>
+</html>

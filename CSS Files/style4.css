@@ -1,0 +1,22 @@
+.page{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.shape1{
+    background-position: center center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(symptoms.png);
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background-image: url(bkg1.png);
+    background-size: cover;
+    position: relative;
+}

@@ -1,0 +1,63 @@
+k,6p]<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+<title>Corono virus Map</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="F:\style2.css"/> 
+</head>
+<body>
+    <div class="container">
+        <h2>COVID-19 cases in <span id="country"></span> <img src="" id="flag"></h2>
+        <div class="board">
+            <div class="card a">
+                <i class=" fa fa-tachometer "></i>
+                <h5>Active Cases</h5>
+                <span id="active"></span>
+            </div>
+            <div class="card ca">
+                <i class=" fa fa-th-list"></i>
+                <h5>Total Cases</h5>
+                <span id="cases"></span>  
+            </div>
+            <div class="card cr">
+                <i class=" fa fa-times-circle"></i>
+                <h5>Critical Cases</h5>
+                <span id="critical"></span>
+            </div>
+            <div class="card d">
+                <i class=" fa fa-times"></i>
+                <h5>Total Deaths</h5>
+                <span id="death"></span>
+            </div>
+            <div class="card r">
+                <i class=" fa fa-check square"></i>
+                <h5>Recovered Cases</h5>
+                <span id="recovered"></span>
+            </div>
+            <div class="card t">
+                <i class=" fa fa-eye"></i>
+                <h5>Total Test Done</h5>
+                <span id="tests"></span>
+            </div>  
+            </div>
+            </div>  
+</body>
+</html>
+<script type="text/javascript">
+fetch('https://corona.lmao.ninja/v2/countries/USA')
+.then((response)=>{
+    return response.json();
+})
+.then((data)=>{
+    document.getElementById("flag").src=data.countryInfo.flag;
+    document.getElementById("country").innerHTML=data.country;
+    document.getElementById("cases").innerHTML=data.cases;
+    document.getElementById("critical").innerHTML=data.critical;
+    document.getElementById("death").innerHTML=data.deaths;
+    document.getElementById("recovered").innerHTML=data.recovered;
+    document.getElementById("tests").innerHTML=data.tests;
+    document.getElementById("active").innerHTML=data.active;
+})
+</script>
