@@ -12,11 +12,11 @@
     background-size: 60%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-image: url(symptoms.png);
+    background-image: url(../images/symptoms.png);
     width: 100%;
     min-height: 100vh;
     overflow: hidden;
-    background-image: url(bkg1.png);
+    background-image: url(../images/bkg1.png);
     background-size: cover;
     position: relative;
 }
